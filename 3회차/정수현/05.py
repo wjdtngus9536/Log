@@ -4,7 +4,18 @@ from pprint import pprint
 
 def credits(title):
     pass 
-    # 여기에 코드를 작성합니다.  
+    # 여기에 코드를 작성합니다.
+    url = 'https://api.themoviedb.org/3/'
+    path = 'search/movie'
+    params = {
+        'api_key' : 'd167ae542dc3068ed1ff2d9023caff95',   
+        'query' : title
+    }
+    response = requests.get(url+path, params).json()
+    if response.get('results') == None : return None
+
+    m_id = response.get('results')
+    print(m_id)
 
 
 # 아래의 코드는 수정하지 않습니다.
