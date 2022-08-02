@@ -11,5 +11,5 @@ for i in pn:
     elif ord(i) >= 80:
         seconds += 8    
     else:
-        seconds += (ord(i) - ord('A'))//3 + 3    
+        seconds += (ord(i) - ord('A'))//3 + 3
 print(seconds)
