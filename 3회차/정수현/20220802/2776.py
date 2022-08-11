@@ -10,6 +10,20 @@
 #             print(1)
 #         else:
 #             print(0)
-
 I=input
-exec("I();s={*I().split()};I();[print(+(e in s))for e in I().split()];"*int(I()))
+# exec("s={*I().split()}; [print(+(e in s)) for e in I().split()];"*5)
+
+s = [1,2,3,4,5]
+# e = [2,4,6,8,10]
+
+# a = [ print(+(e in s)) for e in e ]
+
+# print(a)
+
+# exec("s = {*I().split()}; print(+(a in s))")
+
+# exec("s=set(I().split()); [print(+(e in s)) for e in I().split()];"*5)
+
+# [print((e in s)) for e in I().split()]
+
+exec("s=[list(input())]; print(s)")
